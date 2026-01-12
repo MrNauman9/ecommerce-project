@@ -11,103 +11,81 @@ The project allows users to:
 
 > ⚠️ This project uses a **demo payment flow**. No real credit card is charged.
 
+---
 
-
-## 🧱 Project Structure
-
+## 📁 Project Structure
+```
 Ecommerce-Project
-│
 ├── frontend-react
-│   ├── node_modules
-│   ├── public
-│   │
-│   ├── src
-│   │   ├── api
-│   │   │   └── client.js
-│   │   │
-│   │   ├── assets
-│   │   │
-│   │   ├── components
-│   │   │   ├── Navbar.jsx
-│   │   │   ├── ProductCard.jsx
-│   │   │   ├── CartDrawer.jsx
-│   │   │   └── CheckoutModal.jsx
-│   │   │
-│   │   ├── pages
-│   │   │   ├── Home.jsx
-│   │   │   └── Success.jsx
-│   │   │
-│   │   ├── styles
-│   │   │   └── app.css
-│   │   │
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   └── index.css
-│   │
-│   ├── index.html
-│   ├── package.json
-│   ├── package-lock.json
-│   ├── vite.config.js
-│   ├── eslint.config.js
-│   ├── .gitignore
-│   └── README.md
+│ ├── node_modules
+│ ├── public
+│ ├── src
+│ │ ├── api
+│ │ │ └── client.js
+│ │ ├── assets
+│ │ ├── components
+│ │ │ ├── Navbar.jsx
+│ │ │ ├── ProductCard.jsx
+│ │ │ ├── CartDrawer.jsx
+│ │ │ └── CheckoutModal.jsx
+│ │ ├── pages
+│ │ │ ├── Home.jsx
+│ │ │ └── Success.jsx
+│ │ ├── styles
+│ │ │ └── app.css
+│ │ ├── App.jsx
+│ │ ├── main.jsx
+│ │ └── index.css
+│ ├── index.html
+│ ├── package.json
+│ ├── package-lock.json
+│ ├── vite.config.js
+│ ├── eslint.config.js
+│ ├── .gitignore
+│ └── README.md
 │
 ├── backend-springboot
-│   ├── .idea
-│   ├── .mvn
-│   │
-│   ├── src
-│   │   ├── main
-│   │   │   ├── java
-│   │   │   │   └── com.nauman.nauman_api
-│   │   │   │       ├── config
-│   │   │   │       │   └── CorsConfig.java
-│   │   │   │       │
-│   │   │   │       ├── Controller
-│   │   │   │       │   ├── ProductController.java
-│   │   │   │       │   ├── CartController.java
-│   │   │   │       │   ├── CheckoutController.java
-│   │   │   │       │   └── PaymentController.java
-│   │   │   │       │
-│   │   │   │       ├── dto
-│   │   │   │       │   ├── AddToCartRequest.java
-│   │   │   │       │   └── UpdateCartRequest.java
-│   │   │   │       │
-│   │   │   │       ├── model
-│   │   │   │       │   ├── Product.java
-│   │   │   │       │   ├── Cart.java
-│   │   │   │       │   ├── CartItem.java
-│   │   │   │       │   ├── Order.java
-│   │   │   │       │   ├── OrderItem.java
-│   │   │   │       │   └── OrderStatus.java
-│   │   │   │       │
-│   │   │   │       ├── payment
-│   │   │   │       │   └── NetsPaymentService.java
-│   │   │   │       │
-│   │   │   │       ├── repository
-│   │   │   │       │   ├── ProductRepository.java
-│   │   │   │       │   ├── CartRepository.java
-│   │   │   │       │   └── OrderRepository.java
-│   │   │   │       │
-│   │   │   │       ├── service
-│   │   │   │       │   ├── ProductService.java
-│   │   │   │       │   ├── CartService.java
-│   │   │   │       │   ├── CheckoutService.java
-│   │   │       │       └── PaymentService.java
-│   │   │       │
-│   │   │       └── NaumanApiApplication.java
-│   │   │
-│   │   └── resources
-│   │       └── application.properties
-│   │
-│   ├── target
-│   ├── pom.xml
-│   └── README.md
+│ ├── src
+│ │ └── main
+│ │ ├── java
+│ │ │ └── com.nauman.nauman_api
+│ │ │ ├── config
+│ │ │ │ └── CorsConfig.java
+│ │ │ ├── Controller
+│ │ │ │ ├── ProductController.java
+│ │ │ │ ├── CartController.java
+│ │ │ │ ├── CheckoutController.java
+│ │ │ │ └── PaymentController.java
+│ │ │ ├── dto
+│ │ │ │ ├── AddToCartRequest.java
+│ │ │ │ └── UpdateCartRequest.java
+│ │ │ ├── model
+│ │ │ │ ├── Product.java
+│ │ │ │ ├── Cart.java
+│ │ │ │ ├── CartItem.java
+│ │ │ │ ├── Order.java
+│ │ │ │ ├── OrderItem.java
+│ │ │ │ └── OrderStatus.java
+│ │ │ ├── payment
+│ │ │ │ └── NetsPaymentService.java
+│ │ │ ├── repository
+│ │ │ │ ├── ProductRepository.java
+│ │ │ │ ├── CartRepository.java
+│ │ │ │ └── OrderRepository.java
+│ │ │ ├── service
+│ │ │ │ ├── ProductService.java
+│ │ │ │ ├── CartService.java
+│ │ │ │ ├── CheckoutService.java
+│ │ │ │ └── PaymentService.java
+│ │ │ └── NaumanApiApplication.java
+│ │ └── resources
+│ │ └── application.properties
+│ ├── pom.xml
+│ └── README.md
 │
-└── README.md   (main project README)
+└── README.md
 
-
-
+```
 
 ## ⚙️ Technologies Used
 
