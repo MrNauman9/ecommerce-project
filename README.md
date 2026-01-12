@@ -103,7 +103,7 @@ Ecommerce-Project
 
 ---
 
-## 🚀 How to Run the Project
+##  How to Run the Project
 
 ### 1️⃣ Run Backend (Spring Boot)
 
@@ -130,7 +130,7 @@ Frontend runs at:
 
 
 http://localhost:5173
-🧪 Demo Payment
+Demo Payment
 Use the following dummy card details:
 
 
@@ -138,7 +138,7 @@ Card Number: 4111 1111 1111 1111
 Expiry: 12/29
 CVC: 123
 Name: John Doe
-📌 Notes
+Notes
 This project uses in-memory storage, so data resets when backend restarts
 
 Payment is simulated
